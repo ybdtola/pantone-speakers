@@ -1,0 +1,157 @@
+/* font: Monserrat */
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Montserrat', sans-serif;
+}
+
+a {
+    text-decoration: none;
+    color: #eeeeee;
+}
+
+header {
+    height: 100vh;
+    background-color: #00002d;
+    color: #ffffff;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 5%;
+}
+
+#logo {
+    font-size: 40px;
+    margin-right: 100px;
+}
+
+nav ul li {
+    display: inline-block;
+    font-size: 15px;
+}
+
+#nav-links li {
+    padding: 30px;
+}
+
+#nav-icons li {
+    padding: 30px;
+    font-size: 25px;
+}
+
+#hero {
+    display: flex;
+    height: calc(100vh - 120.4px);
+    /* padding-top: 5%; */
+}
+
+#left {
+    width: 40%;
+    /* padding: 5% 5%; */
+    position: relative;
+}
+
+hr {
+    width: 3%;
+    position: relative;
+    left: 20%;
+    top: 5%;
+    border: 4px solid white;
+}
+
+#left h1 {
+    font-size: 4vw;
+    padding: 10% 20%;
+    /* position: relative; */
+    /* top: 3%; */
+}
+
+#left p {
+    font-size: 12px;
+    position: absolute;
+    transform: rotate(-90deg);
+    left: 0;
+    top: 25%;
+}
+
+#info {
+    width: 100%;
+    background: #111111;
+    height: 170px;
+    color: #fff;
+    position: absolute;
+    bottom: 0;
+    padding-left: 20%;
+    padding-top: 7%;
+    display: flex;
+    ;
+}
+
+#right {
+    width: 60%;
+    display: flex;
+    padding: 5% 5% 5% 10%;
+}
+
+#image {
+    width: 400px;
+}
+
+#right img {
+    width: 70%;
+    transform: rotate(-40deg);
+}
+
+#image-info {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    width: 350px;
+}
+
+#image-info ul {
+    margin-top: 100px;
+}
+
+#image-info ul li {
+    padding: 10px;
+}
+
+#pricing {
+    position: relative;
+    left: -40px;
+    text-align: center;
+}
+
+#image-info #pricing p {
+    font-size: 11px;
+}
+
+#links a {
+    position: relative;
+    font-size: 12px;
+}
+
+
+/*pseudo class - one colon
+pseudo element - two colon*/
+
+#links a:not(:last-child)::after {
+    content: "|";
+}
+
+#country {
+    /* position: sticky;
+    left: 70%;
+    height: 40px;
+    width: 100px; */
+    /* transform: rotate(-90deg); */
+    background-color: white;
+    color: black;
+}
